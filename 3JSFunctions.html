@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function greetings(){
+        console.log("Good Noon");
+    }
+    greetings();
+    greetings();
+
+    function addition(a,b,c){
+        return a+b+c;
+    }
+    console.log("The sum is "+ addition(2,4,5));
+
+    //Arrow function
+    const subtraction = (x,y) => {console.log(x-y)};
+    subtraction(5,2);
+
+    const greet = () => {console.log("Hello")}
+    greet();
+
+    //String Methods
+
+    const str1 = "  Javas cript  ";
+    const str2 = "CSE326";
+
+    console.log("We are studying " + str1 + " in " + str2);
+
+    //String template
+
+    console.log(`We are studying ${str1} in ${str2}`);
+
+    console.log(str1.indexOf("v"));
+    console.log(str1.charAt(5));
+    console.log(str1.length);
+    console.log(str1.trim());
+    console.log(str1.trim().length);
+    console.log(str1.includes("k"));
+    console.log(str1.slice(2,4));
+    console.log(str1.replace("J", "Ta"));
+
+    //Array Methods
+
+    let array1 = ["a","b","c","d"];
+    array1.push("grapes"); //at last of the array
+    console.log(array1);
+    array1.unshift("mango");
+    console.log(array1);
+    array1.pop(); //delete elemwnt from the last
+    // console.log(array1);
+    // array1.shift();
+    // console.log(array1);
+    // console.log(array1.slice(1,3));
+    
+    // array1.splice(2,2,"tomato","potato");
+    // console.log(array1);
+
+    //Objects
+
+    let student = {
+        rollno:1,
+        course:"cse326",
+        name:"Raj",
+        info: function(){
+            console.log("The state of student is punjab")
+        }
+    }
+    console.log("The roll no is " + student.rollno + " name is " + 
+        student.name
+    );
+    student.info();
+
+    function Book(name, publisher){
+        this.name = name;
+        this.publisher = publisher;
+    }
+
+    const b1 = new Book("Python", "Pearson");
+    console.log(b1.name, b1.publisher);
+    const b2 = new Book("DSA", "BPB");
+    console.log(b2.name,b2.publisher);
+
+
+    let marks = 200;
+
+    try{
+    if(marks<0 || marks>100){
+        throw new Error("Invalid input");
+    }
+    console.log(marks);
+}  
+catch(err){
+    console.log(err.message);
+
+} 
+finally{
+    console.log("Done");
+}
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

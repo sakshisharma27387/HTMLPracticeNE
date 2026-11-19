@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Arithmetic Operators
+
+        let a = 60;
+        let b =90;
+        console.log(a+b, a-b, a*b, a/b, a%b, a++, ++a, a--, --a);
+
+        let x = 10;
+        let y = x++;
+        console.log(x);
+        console.log(y);
+
+        //Assignment Operators
+
+        let q = 10;
+        let r= 20;
+        console.log(q+=r,q-=r,q*=r);
+
+        let w = 10;
+        let s = "10";
+        console.log(w!==s,w>=s);
+
+        //Logical Operators
+
+        let q1 = 3;
+        let q2 = 3;
+        console.log(!((q1>q2) || (q1==q2)));
+
+        //Branching Statements
+
+        let m = 40;
+        if (m>=90){
+            console.log("Elite batch")
+        }
+        else if (m>=75){
+            console.log("Intermediate batch")
+        }
+        else if (m>=60){
+            console.log("regular batch")
+        }
+        else{
+            console.log("Fail")
+        }
+
+        //Looping Statements
+
+        for(i=3; i<=15 ; i++){
+            if(i==6){
+                break;
+            }
+            console.log(i);
+        }
+
+
+        // let j = 11;
+        // while(j<=10){
+        //     console.log(j);
+        //     j++;
+        // }
+
+        // let k = 23;
+        // do{
+        //     console.log(k);
+        //     k++;
+        // }while(k<=20);
+
+        //Implicit and explicit type conversion
+
+        let age = "5";
+        console.log(5+age);
+
+        console.log("5" + 6);//Implicit
+
+        console.log("3" - 1);
+
+        console.log(Number("5")+6); //Explicit
+
+        console.log(parseInt("13.4xx"));
+        console.log(parseFloat("13.555hhh"));
+
+
+    </script>
+</body>
+</html>
